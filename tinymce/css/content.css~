@@ -1,0 +1,10 @@
+
+.ot-hidden {
+ position: absolute;
+ left: -999em;
+}
+
+.ot-hide {
+border:1px solid;
+width:90%;
+}
