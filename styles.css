@@ -1,0 +1,7 @@
+/* for eocontentquestion */
+.ot-hidden {
+ position: absolute;
+ left: -999em;
+border:none;
+}
+

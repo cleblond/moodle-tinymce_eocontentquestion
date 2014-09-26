@@ -31,24 +31,20 @@ class tinymce_eocontentquestion extends editor_tinymce_plugin {
             array $options = null) {
 	    global $course;
 
-
-//	$coursecontext = get_context_instance(CONTEXT_COURSE, $course->id);
-
-	
 	
 
-
+/*
 //	    $contextmodule = context_module::instance($cm->id);		
             $filters = filter_get_active_in_context($context);
             if (!array_key_exists('marvintinymcestudent', $filters)) {
                 return;
             }
-
-/*	if (!has_capability('moodle/course:viewhiddensections', $context)) {
+*/
+	if (!has_capability('moodle/course:viewhiddensections', $context)) {
 
 	return;
 	}
-*/
+
 	$this->add_button_after($params, 1, 'eocontentquestion');
         // Add JS file, which uses default name.
         $this->add_js_plugin($params);
